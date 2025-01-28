@@ -445,12 +445,50 @@
   </div>
 
   <div class="bg-white">
-    <div class="container-md py-5">
-      <div class="bg-yashyl my-5 rounded-4">
+    <div class="container-xl py-5">
+      <div class="bg-yashyl my-5 rounded-4 w-75">
         <div class="text-center">
           <img src="img/Projects/the-5th-IQYR7N67dhM-unsplash.jpg" alt="" class="w-15 rounded-circle py-2">
           <span class="text-center display-4 fw-semibold text-white ps-3 mt-3 ">Projects</span>
         </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-3 rounded-4 bg-lighter">
+          <div class="text-yashyl pt-5 px-4">
+            BRANDING
+          </div>
+          <div class="text-black h2 fw-bold px-4">
+            Zoik agency
+          </div>
+          <div class="px-3  me-3">
+            <img src="img/Projects/nikhil-KO4io-eCAXA-unsplash.jpg" alt="" class="w-100 rounded-5">
+          </div>
+        </div>
+        <div class="col-3 rounded-4 bg-lighter">
+          <div class="text-yashyl pt-5 px-4">
+            BRANDING
+          </div>
+          <div class="text-black h2 fw-bold px-4">
+            Zoik agency
+          </div>
+          <div class="px-3 me-3">
+            <img src="img/Projects/nikhil-KO4io-eCAXA-unsplash.jpg" alt="" class="w-100 rounded-5">
+          </div>
+        </div>
+        <div class="col-3 rounded-4 bg-lighter">
+          <div class="text-yashyl pt-5 px-4">
+            BRANDING
+          </div>
+          <div class="text-black h2 fw-bold px-4">
+            Zoik agency
+          </div>
+          <div class="px-3 me-3">
+            <img src="img/Projects/nikhil-KO4io-eCAXA-unsplash.jpg" alt="" class="w-100 rounded-5">
+          </div>
+        </div>
+      </div>     
+    </div>       
+  </div>      
 
 
   <script src="js/aos.js"></script>
@@ -459,6 +497,29 @@
   <script src="js/fancybox.umd.js"></script>
   <script src="js/splide.min.js"></script>
   <script src="js/splide.min.js.map"></script>
+  <script>
+    Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            autoplay: true,
+            interval: 2e3,
+            perPage: 2,
+            perMove: 2,
+            gap: '1rem',
+            pagination: 0,
+            breakpoints: {
+                767: {
+                    perPage: 1,
+                    perMove: 1,
+                },
+            },
+        });
+        splide.mount();
+    });
+</script>
 </body>
 
 </html>
