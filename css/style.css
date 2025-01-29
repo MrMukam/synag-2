@@ -64,3 +64,7 @@
     table-layout: auto;
 }
 
+.font {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
